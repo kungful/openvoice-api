@@ -6,19 +6,18 @@
               openvoiceV2（Windows系统推荐[conda](https://www.anaconda.com/)环境里部署）：https://github.com/myshell-ai/OpenVoice
               pyVideoTrans: https://github.com/jianchang512/pyvideotrans.git
 
-## 安装运行 
+## 替换参考音频 
 ```shell
 #在代码里面改成你的参考音频文件
-"变量音频": "resources/maikease.wav"
-#或者在resources目录里把你的音频改成maikease.wav，格式和名称一样替换就能克隆音色
-...
-         
+"变量音频": "resources/example_reference.mp3"
+#或者把你的音频改成example_reference.mp3放入resources进行替换，格式和名称一样替换就能克隆音色
+
 
 ```shell
 pip install notebook
 pip install uvicorn
 uvicorn tryopenvoice:app --reload
-...
+
 
 
 
