@@ -8,12 +8,12 @@ import uuid
 from openvoice import se_extractor
 from openvoice.api import ToneColorConverter
 
-# # 删除根目录下的某个子文件夹内的所有音频文件
-# folder_path = ".\\audio_files"  # 替换为你的子文件夹路径
-# for filename in os.listdir(folder_path):
-#     file_path = os.path.join(folder_path, filename)
-#     if filename.endswith(".mp3"):  # 删除所有以.wav结尾的文件，你可以根据需要修改文件类型
-#         os.remove(file_path)
+# 删除根目录下的某个子文件夹内的所有音频文件
+folder_path = ".\\audio_files"  # 替换为你的子文件夹路径
+for filename in os.listdir(folder_path):
+    file_path = os.path.join(folder_path, filename)
+    if filename.endswith(".mp3"):  # 删除所有以.wav结尾的文件，你可以根据需要修改文件类型
+        os.remove(file_path)
 
 device ='cuda' if torch.cuda.is_available() else 'cpu'
 
