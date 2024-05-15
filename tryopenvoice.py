@@ -77,11 +77,11 @@ async def generate_audio(request: Request):
 
                 # 运行音调颜色转换器
         # encode_message = "@MyShell" # 定义要嵌入音频中的水印信息
-        # tone_color_converter.convert(   # 使用音色转换器转换音频并嵌入水印
-        #     audio_src_path=output_path,  # 源音频文件路径s
-        #     src_se=source_se, # 源音色
-        #     tgt_se=target_se,  # 目标音色
-        #      output_path=output_path,) # 输出音频文件路径（此处和输入音频路径相同，即直接覆盖原音频）
+        tone_color_converter.convert(   # 使用音色转换器转换音频并嵌入水印
+            audio_src_path=output_path,  # 源音频文件路径s
+            src_se=source_se, # 源音色
+            tgt_se=target_se,  # 目标音色
+             output_path=output_path,) # 输出音频文件路径（此处和输入音频路径相同，即直接覆盖原音频）
         #     message=encode_message)   # 要嵌入的水印信息
 
 
