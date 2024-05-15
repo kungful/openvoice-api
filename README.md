@@ -11,13 +11,13 @@
 #在代码里面改成你的参考音频文件
 "变量音频": "resources/example_reference.mp3"
 #或者把你的音频改成example_reference.mp3放入resources进行替换，格式和名称一样替换就能克隆音色
-
-
+```
+##安装和运行
 ```shell
 pip install notebook
 pip install uvicorn
 uvicorn tryopenvoice:app --reload
-
+```
 
 
 
