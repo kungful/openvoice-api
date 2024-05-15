@@ -7,6 +7,10 @@
               pyVideoTrans: https://github.com/jianchang512/pyvideotrans.git
 
 ## 安装运行 
+         
 
-
+```shell
+pip install notebook
+pip install uvicorn
+uvicorn tryopenvoice:app --reload
  
